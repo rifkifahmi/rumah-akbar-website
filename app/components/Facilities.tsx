@@ -62,15 +62,50 @@ export default function Facilities() {
           className="mt-16 bg-gradient-to-r from-primary/10 to-accent/10 rounded-lg p-8 border-l-4 border-accent"
         >
           <h3 className="text-2xl font-bold text-primary mb-4">Layanan Tambahan Tersedia</h3>
-          <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {[
-              '🚗 Airport Pickup',
-              '🍽️ Catering/Makanan',
-              '🚴 Penyewaan Motor/Mobil',
-              '🎣 Aktivitas Pantai',
-              '🏄 Surfing Lessons',
-              '🌅 Private Beach Tour',
-            ].map((service) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+  {[
+    {
+      icon: '🚗',
+      title: 'Bantuan Transportasi',
+      description: 'Membantu tamu mendapatkan informasi transportasi lokal serta penyewaan motor dan mobil selama menginap.',
+    },
+    {
+      icon: '🍽️',
+      title: 'Rekomendasi Kuliner Lokal',
+      description: 'Panduan tempat makan dan kuliner khas Taliwang yang wajib dicoba.',
+    },
+    {
+      icon: '📍',
+      title: 'Informasi Wisata Lokal',
+      description: 'Rekomendasi pantai, tempat wisata, dan aktivitas menarik di sekitar Sumbawa Barat.',
+    },
+    {
+      icon: '👨‍👩‍👧‍👦',
+      title: 'Ramah Keluarga',
+      description: 'Lingkungan yang nyaman dan cocok untuk keluarga maupun rombongan.',
+    },
+    {
+      icon: '🌴',
+      title: 'Dekat Pantai Balad',
+      description: 'Lokasi strategis untuk menikmati keindahan Pantai Balad dan sekitarnya.',
+    },
+  ].map((service) => (
+    <div
+      key={service.title}
+      className="bg-white rounded-lg p-4 border border-gray-200"
+    >
+      <div className="flex items-center gap-2 mb-2">
+        <span className="text-2xl">{service.icon}</span>
+        <h4 className="font-semibold text-primary">
+          {service.title}
+        </h4>
+      </div>
+      <p className="text-sm text-gray-600">
+        {service.description}
+      </p>
+    </div>
+  ))}
+</div>
               <div key={service} className="flex items-center gap-2">
                 <span className="text-lg">{service.split(' ')[0]}</span>
                 <span>{service.slice(2)}</span>
