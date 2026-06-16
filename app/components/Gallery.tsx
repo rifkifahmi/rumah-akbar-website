@@ -9,7 +9,7 @@ const GALLERY_IMAGES = [
   {
     id: 1,
     title: 'Rumah Akbar Guest House',
-    src: '/images/gallery/01-hero-house.png'
+    src: '/images/gallery/01-hero-house.png.png'
   },
   {
     id: 2,
