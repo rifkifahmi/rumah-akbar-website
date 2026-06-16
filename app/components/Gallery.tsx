@@ -54,7 +54,7 @@ const GALLERY_IMAGES = [
   {
     id: 10,
     title: 'Kamar Mandi',
-    src: '/images/gallery/10-bathroom.png'
+    src: '/images/gallery/10-bathroom.png.png'
   }
 ]
 
