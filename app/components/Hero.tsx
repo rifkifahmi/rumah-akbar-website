@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import { ChevronDown } from 'lucide-react'
 import { PROPERTY_INFO } from '@/lib/constants'
 import { generateWhatsAppUrl } from '@/lib/utils'
+import Image from 'next/image'
 
 export default function Hero() {
   const scrollToNext = () => {
@@ -12,9 +13,18 @@ export default function Hero() {
 
   return (
     <section
-      id="home"
-      className="min-h-screen pt-20 bg-gradient-to-br from-primary via-slate-900 to-primary text-white flex items-center justify-center relative overflow-hidden"
-    >
+  id="home"
+  className="min-h-screen pt-20 text-white flex items-center justify-center relative overflow-hidden"
+>
+      <Image
+  src="/images/gallery/02-eksterior-rumah-akbar-cover.png"
+  alt="Rumah Akbar Guest House"
+  fill
+  priority
+  className="object-cover"
+/>
+
+<div className="absolute inset-0 bg-black/55" />
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div
@@ -39,7 +49,7 @@ export default function Hero() {
         />
       </div>
 
-      <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 text-center">
+    <div className="relative z-20 max-w-4xl mx-auto px-4 sm:px-6 text-center">
         {/* Tagline */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}
@@ -127,7 +137,7 @@ export default function Hero() {
         animate={{ y: [0, 10, 0] }}
         transition={{ duration: 2, repeat: Infinity }}
         onClick={scrollToNext}
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white z-20"
+        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white z-30"
       >
         <ChevronDown size={32} />
       </motion.button>
