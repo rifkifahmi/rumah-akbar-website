@@ -105,14 +105,6 @@ export default function Gallery() {
           ))}
         </div>
 
-        {/* Note */}
-        <div className="mt-12 p-6 bg-white rounded-lg border-2 border-dashed border-gray-300">
-          <p className="text-center text-gray-600">
-            💡 <strong>Catatan:</strong> Ganti gambar placeholder di folder <code className="bg-gray-100 px-2 py-1 rounded">/public/images/gallery/</code> dengan foto actual properti Anda.
-          </p>
-        </div>
-      </div>
-
       {/* Lightbox Modal */}
       {selectedImage && (
         <motion.div
