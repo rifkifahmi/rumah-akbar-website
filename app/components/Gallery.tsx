@@ -14,7 +14,7 @@ const GALLERY_IMAGES = [
   {
     id: 2,
     title: 'Eksterior Rumah',
-    src: '/images/gallery/02-eksterior-rumah-akbar-cover.png'
+    src: '/images/gallery/02-eksterior-rumah-akbar-cover.png.png'
   },
   {
     id: 3,
