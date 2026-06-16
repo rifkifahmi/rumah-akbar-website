@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply transition-colors duration-300;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-white text-gray-900;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  @apply w-2;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-200;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-primary rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-primary/80;
+}
+
+/* Selection color */
+::selection {
+  @apply bg-primary/20 text-primary;
+}
+
+/* Custom animations */
+@keyframes fadeIn {
+  from {
+    @apply opacity-0;
+  }
+  to {
+    @apply opacity-100;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    @apply translate-y-5 opacity-0;
+  }
+  to {
+    @apply translate-y-0 opacity-100;
+  }
+}
+
+/* Utility classes */
+.gradient-primary {
+  @apply bg-gradient-to-r from-primary to-primary/80;
+}
+
+.gradient-accent {
+  @apply bg-gradient-to-r from-accent to-accent/80;
+}
+
+.btn-primary {
+  @apply px-6 py-3 bg-primary text-white rounded-lg font-semibold hover:bg-primary/90 transition-colors;
+}
+
+.btn-accent {
+  @apply px-6 py-3 bg-accent text-primary rounded-lg font-semibold hover:bg-accent/90 transition-colors;
+}
+
+.card {
+  @apply bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow;
+}
+
+.section-padding {
+  @apply py-16 md:py-20;
+}
