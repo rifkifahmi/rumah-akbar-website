@@ -106,14 +106,4 @@ export default function Facilities() {
     </div>
   ))}
 </div>
-              <div key={service} className="flex items-center gap-2">
-                <span className="text-lg">{service.split(' ')[0]}</span>
-                <span>{service.slice(2)}</span>
-              </div>
-            ))}
-          </ul>
-        </motion.div>
-      </div>
-    </section>
-  )
-}
+            
