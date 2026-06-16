@@ -19,7 +19,7 @@ const GALLERY_IMAGES = [
   {
     id: 3,
     title: 'Halaman dan Parkir',
-    src: '/images/gallery/03-halaman-dan-parkir.png'
+    src: '/images/gallery/03-halaman-dan-parkir.png.png'
   },
   {
     id: 4,
