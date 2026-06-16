@@ -17,7 +17,7 @@ export default function Hero() {
   className="min-h-screen pt-20 text-white flex items-center justify-center relative overflow-hidden"
 >
       <Image
-  src="/images/gallery/02-eksterior-rumah-akbar-cover.png"
+  src="/images/gallery/02-eksterior-rumah-akbar-cover.png.png"
   alt="Rumah Akbar Guest House"
   fill
   priority
