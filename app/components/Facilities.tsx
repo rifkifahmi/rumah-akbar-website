@@ -105,5 +105,10 @@ export default function Facilities() {
       </p>
     </div>
   ))}
+            </div>
 
-            
+        </motion.div>
+      </div>
+    </section>
+  )
+}
