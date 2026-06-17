@@ -70,7 +70,5 @@ return ( <section className="py-20 bg-light"> <div className="max-w-6xl mx-auto 
 
   </div>
 </section>
-```
-
 )
 }
