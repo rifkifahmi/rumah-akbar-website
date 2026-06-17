@@ -8,12 +8,14 @@ import FAQ from './components/FAQ'
 import Location from './components/Location'
 import Footer from './components/Footer'
 import FloatingWhatsApp from './components/FloatingWhatsApp'
+import TrustIndicators from './components/TrustIndicators'
 
 export default function Home() {
   return (
     <>
       <Header />
       <Hero />
+      <TrustIndicators />
       <Gallery />
       <Facilities />
       <Pricing />
