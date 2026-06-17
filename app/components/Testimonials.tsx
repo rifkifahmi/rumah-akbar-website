@@ -121,7 +121,5 @@ Mengapa Memilih Rumah Akbar Guest House? </h2>
     </motion.div>
   </div>
 </section>
-```
-
 )
 }
