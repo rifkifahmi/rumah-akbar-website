@@ -26,7 +26,6 @@ text: 'Guest House Rumah Akbar memiliki rating sempurna 5.0 dari para tamu yang 
 
 return ( <section className="py-20 bg-light"> <div className="max-w-6xl mx-auto px-4 sm:px-6">
 
-```
     <div className="text-center mb-16">
       <h2 className="text-4xl font-bold text-primary mb-4">
         Apa Kata Tamu Kami?
