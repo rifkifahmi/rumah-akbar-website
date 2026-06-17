@@ -172,10 +172,7 @@ export default function Hero() {
 <p className="text-gray-300 text-sm">
   per malam • hingga 4 tamu
 </p>
-            <p className="text-3xl font-bold text-accent">
-              Rp{(PROPERTY_INFO.startingPrice / 1000).toFixed(0)}K
-            </p>
-            <p className="text-gray-400 text-sm">per malam</p>
+            
           </div>
         </motion.div>
       </div>
