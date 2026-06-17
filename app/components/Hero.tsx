@@ -161,7 +161,17 @@ export default function Hero() {
           className="mt-12 inline-block"
         >
           <div className="bg-white/10 backdrop-blur-md px-6 py-4 rounded-lg border border-white/20">
-            <p className="text-gray-300 text-sm">Mulai dari</p>
+            <p className="text-gray-300 text-sm">
+  Mulai dari
+</p>
+
+<p className="text-4xl font-bold text-accent">
+  Rp650.000
+</p>
+
+<p className="text-gray-300 text-sm">
+  per malam • hingga 4 tamu
+</p>
             <p className="text-3xl font-bold text-accent">
               Rp{(PROPERTY_INFO.startingPrice / 1000).toFixed(0)}K
             </p>
