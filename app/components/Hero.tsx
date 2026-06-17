@@ -91,7 +91,25 @@ export default function Hero() {
         >
           {PROPERTY_INFO.location}
         </motion.p>
+<motion.div
+  initial={{ opacity: 0, y: -20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.6, delay: 0.45 }}
+  className="flex flex-wrap justify-center gap-3 mb-8"
+>
+  <div className="bg-white/10 backdrop-blur-md px-4 py-2 rounded-full border border-white/20">
+    ⭐ Google Maps 5,0/5 (9 ulasan)
+  </div>
 
+  <div className="bg-white/10 backdrop-blur-md px-4 py-2 rounded-full border border-white/20">
+    ⭐ Airbnb 5,0/5
+  </div>
+
+  <div className="bg-white/10 backdrop-blur-md px-4 py-2 rounded-full border border-white/20">
+    ⭐ Booking.com 9,0/10
+  </div>
+</motion.div>
+      
         {/* CTA Buttons */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}
