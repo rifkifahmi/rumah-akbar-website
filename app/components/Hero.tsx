@@ -68,7 +68,7 @@ export default function Hero() {
   transition={{ duration: 0.6, delay: 0.15 }}
   className="text-lg text-gray-200 max-w-2xl mx-auto mb-4"
 >
-  Guest House privat yang nyaman untuk keluarga, hanya beberapa langkah dari Pantai Balad.
+ Vila Privat Dekat Pantai Balad untuk Keluarga & Wisatawan
 </motion.p>
 
         {/* Main Heading */}
