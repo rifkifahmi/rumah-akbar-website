@@ -51,15 +51,14 @@ export default function Hero() {
 
     <div className="relative z-20 max-w-4xl mx-auto px-4 sm:px-6 text-center">
         {/* Tagline */}
-        <motion.div
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.1 }}
-          className="inline-block mb-4"
-        >
-          <span className="text-accent font-semibold text-sm tracking-widest">
-            PRIVATE FAMILY STAY
-          </span>
+       <motion.p
+  initial={{ opacity: 0, y: -20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.6, delay: 0.35 }}
+  className="text-lg text-gray-200 max-w-2xl mx-auto mb-4"
+>
+  Guest House privat yang nyaman untuk keluarga, hanya beberapa langkah dari Pantai Balad.
+</motion.p>
         </motion.div>
 
         {/* Main Heading */}
@@ -98,16 +97,16 @@ export default function Hero() {
   className="flex flex-wrap justify-center gap-3 mb-8"
 >
   <div className="bg-white/10 backdrop-blur-md px-4 py-2 rounded-full border border-white/20">
-    ⭐ Google Maps 5,0/5 (9 ulasan)
-  </div>
+  ⭐ Google Maps 5,0 (9 Ulasan)
+</div>
 
-  <div className="bg-white/10 backdrop-blur-md px-4 py-2 rounded-full border border-white/20">
-    ⭐ Airbnb 5,0/5
-  </div>
+<div className="bg-white/10 backdrop-blur-md px-4 py-2 rounded-full border border-white/20">
+  ⭐ Airbnb 5,0 (2 Ulasan)
+</div>
 
-  <div className="bg-white/10 backdrop-blur-md px-4 py-2 rounded-full border border-white/20">
-    ⭐ Booking.com 9,0/10
-  </div>
+<div className="bg-white/10 backdrop-blur-md px-4 py-2 rounded-full border border-white/20">
+  🏆 Booking.com 9,0 (3 Ulasan)
+</div>
   <div className="bg-accent/20 backdrop-blur-md px-4 py-2 rounded-full border border-accent/30">
   🏖️ Hanya ±50 Meter dari Pantai Balad
 </div>
@@ -120,6 +119,7 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.5 }}
           className="flex flex-col sm:flex-row gap-4 justify-center"
         >
+          
           <a
             href={generateWhatsAppUrl()}
             target="_blank"
@@ -152,7 +152,17 @@ export default function Hero() {
             Lihat Galeri
           </button>
         </motion.div>
-
+<motion.div
+  initial={{ opacity: 0, y: -20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.6, delay: 0.55 }}
+  className="mt-8 flex flex-wrap justify-center gap-6 text-sm text-gray-200"
+>
+  <span>🛏️ 2 Kamar Tidur</span>
+  <span>🚿 2 Kamar Mandi</span>
+  <span>👨‍👩‍👧‍👦 Hingga 4 Tamu</span>
+  <span>📶 WiFi Gratis</span>
+</motion.div>
         {/* Price Info */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}
