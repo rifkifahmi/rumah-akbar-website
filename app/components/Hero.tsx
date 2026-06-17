@@ -138,7 +138,7 @@ export default function Hero() {
 </a>
 
 <a
-  href="https://www.booking.com/hotel/id/rumah-akbar-villa-taliwang.id.html"
+  href="https://www.booking.com/Share-WBHaM5"
   target="_blank"
   rel="noopener noreferrer"
   className="px-8 py-3 bg-white/20 backdrop-blur border border-white/20 text-white rounded-lg font-semibold hover:bg-white/30 transition-colors"
