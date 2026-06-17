@@ -142,4 +142,11 @@ export const TESTIMONIALS = [
     rating: 5,
     text: 'Tempat nyaman, bersih, dan cocok untuk keluarga.',
   },
+  {
+    id: 2,
+    name: 'Keluarga Wisatawan',
+    location: 'NTB',
+    rating: 5,
+    text: 'Lokasi dekat Pantai Balad dan suasana sangat tenang.',
+  },
 ]
