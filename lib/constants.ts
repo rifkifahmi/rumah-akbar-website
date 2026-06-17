@@ -65,12 +65,12 @@ export const PRICING = [
     price: 650000,
     capacity: 'Hingga 4 orang',
     features: [
-      '2 Kamar tidur',
-      '2 Kamar mandi',
-      'Dapur lengkap',
-      'WiFi gratis',
-      'Parkir gratis',
-      'Halaman luas',
+      '2 Kamar Tidur',
+      '2 Kamar Mandi',
+      'Dapur Lengkap',
+      'WiFi Gratis',
+      'Parkir Gratis',
+      'Halaman Luas',
     ],
   },
   {
@@ -81,10 +81,11 @@ export const PRICING = [
     features: [
       'Semua fasilitas',
       'Diskon 8%',
-      'Flexible check-in/out',
-      'Airport pickup (optional)',
+      'Flexible Check-in/Out',
+      'WiFi Gratis',
+      'Parkir Gratis',
     ],
-    badge: 'Hemat 144.000',
+    badge: 'Hemat 150.000',
   },
   {
     id: 3,
@@ -94,14 +95,13 @@ export const PRICING = [
     features: [
       'Semua fasilitas',
       'Diskon 10%',
-      'Flexible check-in/out',
-      'Daily cleaning',
-      'Airport pickup included',
+      'Flexible Check-in/Out',
+      'WiFi Gratis',
+      'Parkir Gratis',
     ],
-    badge: 'Hemat 700.000',
+    badge: 'Hemat 350.000',
   },
 ]
-
 export const FAQ = [
   {
     id: 1,
