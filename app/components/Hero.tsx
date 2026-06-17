@@ -25,7 +25,6 @@ return ( <section
      className="object-cover"
    />
 
-```
   {/* Overlay */}
   <div className="absolute inset-0 bg-black/55" />
 
@@ -177,7 +176,5 @@ return ( <section
     <ChevronDown size={32} />
   </motion.button>
 </section>
-```
-
 )
 }
