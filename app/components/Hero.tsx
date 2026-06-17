@@ -7,174 +7,154 @@ import { generateWhatsAppUrl } from '@/lib/utils'
 import Image from 'next/image'
 
 export default function Hero() {
-const scrollToNext = () => {
-document.getElementById('gallery')?.scrollIntoView({
-behavior: 'smooth',
-})
-}
+  const scrollToNext = () => {
+    document.getElementById('gallery')?.scrollIntoView({
+      behavior: 'smooth',
+    })
+  }
 
-return ( <section
-   id="home"
-   className="min-h-screen pt-20 text-white flex items-center justify-center relative overflow-hidden"
- >
-{/* Background Image */} <Image
-     src="/images/gallery/02-eksterior-rumah-akbar-cover.png.png"
-     alt="Rumah Akbar Guest House"
-     fill
-     priority
-     className="object-cover"
-   />
-
-  {/* Overlay */}
-  <div className="absolute inset-0 bg-black/55" />
-
-  {/* Background Blur Animation */}
-  <div className="absolute inset-0 overflow-hidden">
-    <motion.div
-      animate={{ y: [0, -20, 0] }}
-      transition={{
-        duration: 8,
-        repeat: Infinity,
-      }}
-      className="absolute top-10 left-10 w-72 h-72 bg-accent/10 rounded-full blur-3xl"
-    />
-
-    <motion.div
-      animate={{ y: [0, 20, 0] }}
-      transition={{
-        duration: 6,
-        repeat: Infinity,
-      }}
-      className="absolute bottom-10 right-10 w-72 h-72 bg-accent/10 rounded-full blur-3xl"
-    />
-  </div>
-
-  <div className="relative z-20 max-w-4xl mx-auto px-4 sm:px-6 text-center">
-
-    {/* Title */}
-    <motion.h1
-      initial={{ opacity: 0, y: -20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6 }}
-      className="text-5xl sm:text-7xl font-bold mb-4"
+  return (
+    <section
+      id="home"
+      className="min-h-screen pt-20 text-white flex items-center justify-center relative overflow-hidden"
     >
-      {PROPERTY_INFO.name}
-    </motion.h1>
+      <Image
+        src="/images/gallery/02-eksterior-rumah-akbar-cover.png.png"
+        alt="Rumah Akbar Guest House"
+        fill
+        priority
+        className="object-cover"
+      />
 
-    {/* Subtitle */}
-    <motion.p
-      initial={{ opacity: 0, y: -20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6, delay: 0.1 }}
-      className="text-xl sm:text-2xl text-gray-200 mb-3"
-    >
-      {PROPERTY_INFO.tagline}
-    </motion.p>
+      <div className="absolute inset-0 bg-black/60" />
 
-    {/* Location */}
-    <motion.p
-      initial={{ opacity: 0, y: -20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6, delay: 0.2 }}
-      className="text-gray-300 mb-8"
-    >
-      {PROPERTY_INFO.location}
-    </motion.p>
+      <div className="relative z-20 max-w-4xl mx-auto px-4 sm:px-6 text-center">
+        
+        {/* Tagline */}
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="mb-4"
+        >
+          <span className="text-accent font-semibold tracking-[3px] text-sm uppercase">
+            Private Family Stay
+          </span>
+        </motion.div>
 
-    {/* Ratings */}
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ delay: 0.3 }}
-      className="flex flex-wrap justify-center gap-3 mb-8"
-    >
-      <a
-        href="https://maps.app.goo.gl/71U1utDetDFoosc76"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="bg-white/10 backdrop-blur-md px-4 py-2 rounded-full border border-white/20 hover:bg-white/20 transition"
-      >
-        ⭐ Google 5.0 (9 Ulasan)
-      </a>
+        {/* Headline */}
+        <motion.h1
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.1 }}
+          className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4"
+        >
+          Rumah Akbar Guest House
+        </motion.h1>
 
-      <a
-        href="https://www.airbnb.co.id/rooms/1638853659702945196"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="bg-white/10 backdrop-blur-md px-4 py-2 rounded-full border border-white/20 hover:bg-white/20 transition"
-      >
-        ⭐ Airbnb 5.0 (2 Ulasan)
-      </a>
+        {/* Subheadline */}
+        <motion.p
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="text-xl text-gray-200 mb-3"
+        >
+          Villa Privat Dekat Pantai Balad untuk Keluarga & Wisatawan
+        </motion.p>
 
-      <a
-        href="https://www.booking.com/hotel/id/rumah-akbar-villa-taliwang.id.html"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="bg-white/10 backdrop-blur-md px-4 py-2 rounded-full border border-white/20 hover:bg-white/20 transition"
-      >
-        🏆 Booking 9.0 (3 Ulasan)
-      </a>
-    </motion.div>
+        {/* Location */}
+        <motion.p
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+          className="text-gray-300 mb-8"
+        >
+          Pantai Balad, Taliwang, Sumbawa Barat, NTB
+        </motion.p>
 
-    {/* CTA Buttons */}
-    <motion.div
-      initial={{ opacity: 0, y: -20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6, delay: 0.4 }}
-      className="flex flex-col sm:flex-row gap-4 justify-center"
-    >
-      <a
-        href={generateWhatsAppUrl()}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="px-8 py-3 bg-accent text-primary rounded-lg font-semibold hover:bg-accent/90 transition-colors"
-      >
-        📱 Pesan Sekarang
-      </a>
+        {/* Rating */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.4 }}
+          className="inline-block bg-white/10 backdrop-blur-md px-6 py-3 rounded-full border border-white/20 mb-8"
+        >
+          ⭐ Google Maps 5,0 (9 Ulasan) • Airbnb 5,0 (2 Ulasan) • Booking.com 9,0 (3 Ulasan)
+        </motion.div>
 
-      <button
-        onClick={scrollToNext}
-        className="px-8 py-3 border-2 border-white text-white rounded-lg font-semibold hover:bg-white/10 transition-colors"
-      >
-        📷 Lihat Galeri
-      </button>
-    </motion.div>
+        {/* CTA */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.5 }}
+          className="flex flex-col sm:flex-row gap-4 justify-center mb-10"
+        >
+          <a
+            href={generateWhatsAppUrl()}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-8 py-4 bg-accent text-primary rounded-lg font-semibold hover:bg-accent/90 transition-colors"
+          >
+            📱 Pesan Sekarang
+          </a>
 
-    {/* Price Box */}
-    <motion.div
-      initial={{ opacity: 0, y: -20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6, delay: 0.5 }}
-      className="mt-10 inline-block"
-    >
-      <div className="bg-white/10 backdrop-blur-md px-8 py-5 rounded-xl border border-white/20">
-        <p className="text-gray-300 text-sm">
-          Mulai dari
-        </p>
+          <button
+            onClick={scrollToNext}
+            className="px-8 py-4 border-2 border-white rounded-lg font-semibold hover:bg-white/10 transition-colors"
+          >
+            📸 Lihat Galeri
+          </button>
+        </motion.div>
 
-        <p className="text-4xl font-bold text-accent">
-          Rp650.000
-        </p>
+        {/* Features */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.6 }}
+          className="flex flex-wrap justify-center gap-6 text-sm text-gray-200 mb-10"
+        >
+          <span>🏖️ ±50 Meter ke Pantai Balad</span>
+          <span>🛏️ 2 Kamar Tidur</span>
+          <span>🚿 2 Kamar Mandi</span>
+          <span>👨‍👩‍👧‍👦 Hingga 4 Tamu</span>
+          <span>📶 WiFi Gratis</span>
+        </motion.div>
 
-        <p className="text-gray-300 text-sm">
-          per malam
-        </p>
+        {/* Price */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.7 }}
+          className="inline-block"
+        >
+          <div className="bg-white/10 backdrop-blur-md px-8 py-6 rounded-xl border border-white/20">
+            <p className="text-gray-300 text-sm">
+              Mulai dari
+            </p>
+
+            <h2 className="text-5xl font-bold text-accent">
+              Rp650.000
+            </h2>
+
+            <p className="text-gray-300 mt-2">
+              per malam • hingga 4 tamu
+            </p>
+          </div>
+        </motion.div>
       </div>
-    </motion.div>
-  </div>
 
-  {/* Scroll Down */}
-  <motion.button
-    animate={{ y: [0, 10, 0] }}
-    transition={{
-      duration: 2,
-      repeat: Infinity,
-    }}
-    onClick={scrollToNext}
-    className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white z-30"
-  >
-    <ChevronDown size={32} />
-  </motion.button>
-</section>
-)
+      {/* Scroll */}
+      <motion.button
+        animate={{ y: [0, 10, 0] }}
+        transition={{
+          duration: 2,
+          repeat: Infinity,
+        }}
+        onClick={scrollToNext}
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 text-white z-30"
+      >
+        <ChevronDown size={32} />
+      </motion.button>
+    </section>
+  )
 }
