@@ -2,7 +2,6 @@
 
 import { motion } from 'framer-motion'
 import { ChevronDown } from 'lucide-react'
-import { PROPERTY_INFO } from '@/lib/constants'
 import { generateWhatsAppUrl } from '@/lib/utils'
 import Image from 'next/image'
 
@@ -18,6 +17,7 @@ export default function Hero() {
       id="home"
       className="min-h-screen pt-20 text-white flex items-center justify-center relative overflow-hidden"
     >
+      {/* Background Image */}
       <Image
         src="/images/gallery/02-eksterior-rumah-akbar-cover.png.png"
         alt="Rumah Akbar Guest House"
@@ -26,47 +26,48 @@ export default function Hero() {
         className="object-cover"
       />
 
+      {/* Overlay */}
       <div className="absolute inset-0 bg-black/60" />
 
-      <div className="relative z-20 max-w-4xl mx-auto px-4 sm:px-6 text-center">
-        
+      <div className="relative z-20 max-w-5xl mx-auto px-4 text-center">
+
         {/* Tagline */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.5 }}
           className="mb-4"
         >
-          <span className="text-accent font-semibold tracking-[3px] text-sm uppercase">
+          <span className="text-accent font-semibold tracking-[4px] uppercase text-sm">
             Private Family Stay
           </span>
         </motion.div>
 
-        {/* Headline */}
+        {/* Heading */}
         <motion.h1
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.1 }}
-          className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4"
+          transition={{ duration: 0.5, delay: 0.1 }}
+          className="text-4xl md:text-6xl font-bold mb-4 leading-tight"
         >
           Rumah Akbar Guest House
         </motion.h1>
 
-        {/* Subheadline */}
+        {/* Subheading */}
         <motion.p
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          className="text-xl text-gray-200 mb-3"
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="text-xl md:text-2xl text-gray-200 mb-3"
         >
           Villa Privat Dekat Pantai Balad untuk Keluarga & Wisatawan
         </motion.p>
 
         {/* Location */}
         <motion.p
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.3 }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.3 }}
           className="text-gray-300 mb-8"
         >
           Pantai Balad, Taliwang, Sumbawa Barat, NTB
@@ -77,27 +78,49 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.4 }}
-          className="inline-block bg-white/10 backdrop-blur-md px-6 py-3 rounded-full border border-white/20 mb-8"
+          className="inline-block bg-white/10 backdrop-blur-md border border-white/20 rounded-full px-6 py-3 mb-8"
         >
           ⭐ Google Maps 5,0 (9 Ulasan) • Airbnb 5,0 (2 Ulasan) • Booking.com 9,0 (3 Ulasan)
         </motion.div>
 
-        {/* CTA */}
+        {/* CTA Buttons */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5 }}
-          className="flex flex-col sm:flex-row gap-4 justify-center mb-10"
+          className="flex flex-wrap justify-center gap-4 mb-8"
         >
+          {/* WhatsApp */}
           <a
             href={generateWhatsAppUrl()}
             target="_blank"
             rel="noopener noreferrer"
             className="px-8 py-4 bg-accent text-primary rounded-lg font-semibold hover:bg-accent/90 transition-colors"
           >
-            📱 Pesan Sekarang
+            📱 Pesan via WhatsApp
           </a>
 
+          {/* Airbnb */}
+          <a
+            href="https://www.airbnb.co.id/rooms/1638853659702945196"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-8 py-4 bg-white/10 backdrop-blur border border-white/20 rounded-lg font-semibold hover:bg-white/20 transition-colors"
+          >
+            🏠 Airbnb
+          </a>
+
+          {/* Booking */}
+          <a
+            href="https://www.booking.com/hotel/id/rumah-akbar-villa-taliwang.id.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-8 py-4 bg-white/10 backdrop-blur border border-white/20 rounded-lg font-semibold hover:bg-white/20 transition-colors"
+          >
+            🏨 Booking.com
+          </a>
+
+          {/* Gallery */}
           <button
             onClick={scrollToNext}
             className="px-8 py-4 border-2 border-white rounded-lg font-semibold hover:bg-white/10 transition-colors"
@@ -120,14 +143,14 @@ export default function Hero() {
           <span>📶 WiFi Gratis</span>
         </motion.div>
 
-        {/* Price */}
+        {/* Price Card */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.7 }}
           className="inline-block"
         >
-          <div className="bg-white/10 backdrop-blur-md px-8 py-6 rounded-xl border border-white/20">
+          <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl px-8 py-6">
             <p className="text-gray-300 text-sm">
               Mulai dari
             </p>
@@ -141,9 +164,10 @@ export default function Hero() {
             </p>
           </div>
         </motion.div>
+
       </div>
 
-      {/* Scroll */}
+      {/* Scroll Down */}
       <motion.button
         animate={{ y: [0, 10, 0] }}
         transition={{
