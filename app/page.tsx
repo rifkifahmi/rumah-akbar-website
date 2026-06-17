@@ -13,19 +13,30 @@ import GuestReviews from './components/GuestReviews'
 
 export default function Home() {
   return (
-    <>
-      <Header />
-      <Hero />
-      <TrustIndicators />
-      <Gallery />
-      <Facilities />
-      <Pricing />
-      <Testimonials />
-      <GuestReviews />
-      <FAQ />
-      <Location />
-      <Footer />
-      <FloatingWhatsApp />
-    </>
+  <>
+  <Header />
+
+  <Hero />
+
+  <TrustIndicators />
+
+  <Gallery />
+
+  <Facilities />
+
+  <Testimonials />
+
+  <GuestReviews />
+
+  <Pricing />
+
+  <Location />
+
+  <FAQ />
+
+  <Footer />
+
+  <FloatingWhatsApp />
+</>
   )
 }
