@@ -48,7 +48,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.1 }}
-          className="text-4xl md:text-6xl font-bold mb-4 leading-tight"
+          className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4"
         >
           Rumah Akbar Guest House
         </motion.h1>
@@ -68,29 +68,30 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3 }}
-          className="text-gray-300 mb-8"
+          className="text-gray-300 mb-6"
         >
           Pantai Balad, Taliwang, Sumbawa Barat, NTB
         </motion.p>
 
-        {/* Rating */}
+        {/* Trust Text */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.4 }}
-          className="inline-block bg-white/10 backdrop-blur-md border border-white/20 rounded-full px-6 py-3 mb-8"
+          className="mb-8"
         >
-          ⭐ Google Maps 5,0 (9 Ulasan) • Airbnb 5,0 (2 Ulasan) • Booking.com 9,0 (3 Ulasan)
+          <div className="inline-block bg-white/10 backdrop-blur-md border border-white/20 rounded-full px-6 py-3">
+            ⭐ Dipercaya oleh tamu Google Maps, Airbnb & Booking.com
+          </div>
         </motion.div>
 
-        {/* CTA Buttons */}
+        {/* CTA */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5 }}
           className="flex flex-wrap justify-center gap-4 mb-8"
         >
-          {/* WhatsApp */}
           <a
             href={generateWhatsAppUrl()}
             target="_blank"
@@ -100,7 +101,6 @@ export default function Hero() {
             📱 Pesan via WhatsApp
           </a>
 
-          {/* Airbnb */}
           <a
             href="https://www.airbnb.co.id/rooms/1638853659702945196"
             target="_blank"
@@ -110,7 +110,6 @@ export default function Hero() {
             🏠 Airbnb
           </a>
 
-          {/* Booking */}
           <a
             href="https://www.booking.com/hotel/id/rumah-akbar-villa-taliwang.id.html"
             target="_blank"
@@ -119,14 +118,6 @@ export default function Hero() {
           >
             🏨 Booking.com
           </a>
-
-          {/* Gallery */}
-          <button
-            onClick={scrollToNext}
-            className="px-8 py-4 border-2 border-white rounded-lg font-semibold hover:bg-white/10 transition-colors"
-          >
-            📸 Lihat Galeri
-          </button>
         </motion.div>
 
         {/* Features */}
@@ -134,7 +125,7 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.6 }}
-          className="flex flex-wrap justify-center gap-6 text-sm text-gray-200 mb-10"
+          className="flex flex-wrap justify-center gap-6 text-sm md:text-base text-gray-200 mb-10"
         >
           <span>🏖️ ±50 Meter ke Pantai Balad</span>
           <span>🛏️ 2 Kamar Tidur</span>
@@ -150,8 +141,8 @@ export default function Hero() {
           transition={{ delay: 0.7 }}
           className="inline-block"
         >
-          <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl px-8 py-6">
-            <p className="text-gray-300 text-sm">
+          <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl px-10 py-6">
+            <p className="text-gray-300 text-sm mb-1">
               Mulai dari
             </p>
 
@@ -167,7 +158,7 @@ export default function Hero() {
 
       </div>
 
-      {/* Scroll Down */}
+      {/* Scroll Indicator */}
       <motion.button
         animate={{ y: [0, 10, 0] }}
         transition={{
