@@ -129,7 +129,23 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.5 }}
           className="flex flex-col sm:flex-row gap-4 justify-center"
         >
-          
+          <motion.div
+  initial={{ opacity: 0 }}
+  animate={{ opacity: 1 }}
+  transition={{ delay: 0.55 }}
+  className="mt-4 text-center"
+>
+  <p className="text-gray-200 text-sm">
+    📞 Reservasi Langsung:
+  </p>
+
+  <a
+    href="https://wa.me/6287784786101"
+    className="text-accent font-bold text-lg hover:underline"
+  >
+    0877-8478-6101
+  </a>
+</motion.div>
           <a
             href={generateWhatsAppUrl()}
             target="_blank"
@@ -138,23 +154,7 @@ export default function Hero() {
           >
             📱 Pesan Sekarang
           </a>
-          <a
-  href="https://www.airbnb.co.id/rooms/1638853659702945196"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="px-8 py-3 bg-white/20 backdrop-blur border border-white/20 text-white rounded-lg font-semibold hover:bg-white/30 transition-colors"
->
-  🏠 Lihat di Airbnb
-</a>
 
-<a
-  href="https://www.booking.com/Share-WBHaM5"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="px-8 py-3 bg-white/20 backdrop-blur border border-white/20 text-white rounded-lg font-semibold hover:bg-white/30 transition-colors"
->
-  🏨 Booking.com
-</a>
           <button
             onClick={scrollToNext}
             className="px-8 py-3 border-2 border-white text-white rounded-lg font-semibold hover:bg-white/10 transition-colors"
@@ -180,20 +180,27 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.6 }}
           className="mt-12 inline-block"
         >
-          <div className="bg-white/10 backdrop-blur-md px-6 py-4 rounded-lg border border-white/20">
-            <p className="text-gray-300 text-sm">
-  Mulai dari
-</p>
+         <div className="bg-white/10 backdrop-blur-md px-6 py-5 rounded-lg border border-white/20">
 
-<p className="text-4xl font-bold text-accent">
-  Rp650.000
-</p>
+  <p className="text-gray-300 text-sm">
+    Mulai dari
+  </p>
 
-<p className="text-gray-300 text-sm">
-  per malam • hingga 4 tamu
-</p>
-            
-          </div>
+  <p className="text-4xl font-bold text-accent">
+    Rp650.000
+  </p>
+
+  <p className="text-gray-300 text-sm mb-3">
+    per malam
+  </p>
+
+  <div className="text-sm space-y-1">
+    <p>✓ Hingga 4 Tamu</p>
+    <p>✓ 2 Kamar Tidur</p>
+    <p>✓ 2 Kamar Mandi</p>
+  </div>
+
+</div>
         </motion.div>
       </div>
 
