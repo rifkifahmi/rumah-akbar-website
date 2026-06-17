@@ -134,27 +134,12 @@ export const FAQ = [
     answer: 'Kami tidak memiliki kolam renang pribadi, tetapi lokasi kami dekat dengan pantai indah yang bisa diakses dengan mudah.',
   },
 ]
-
 export const TESTIMONIALS = [
   {
     id: 1,
-    name: 'Sarah & David',
-    location: 'Australia',
+    name: 'Tamu Rumah Akbar',
+    location: 'Sumbawa Barat',
     rating: 5,
-    text: 'Tempat yang sempurna untuk liburan keluarga! Pemandangan pantai yang indah dan host yang sangat ramah.',
-  },
-  {
-    id: 2,
-    name: 'Budi Santoso',
-    location: 'Jakarta',
-    rating: 5,
-    text: 'Lokasi strategis, fasilitas lengkap, dan harga yang sangat terjangkau. Akan datang lagi!',
-  },
-  {
-    id: 3,
-    name: 'Emma Mitchell',
-    location: 'UK',
-    rating: 5,
-    text: 'Ideal untuk digital nomads. Suasana tenang, WiFi stabil, dan pemilik yang sangat responsif.',
+    text: 'Tempat nyaman, bersih, dan cocok untuk keluarga.',
   },
 ]
