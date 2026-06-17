@@ -108,6 +108,9 @@ export default function Hero() {
   <div className="bg-white/10 backdrop-blur-md px-4 py-2 rounded-full border border-white/20">
     ⭐ Booking.com 9,0/10
   </div>
+  <div className="bg-accent/20 backdrop-blur-md px-4 py-2 rounded-full border border-accent/30">
+  🏖️ Hanya ±50 Meter dari Pantai Balad
+</div>
 </motion.div>
       
         {/* CTA Buttons */}
@@ -125,6 +128,23 @@ export default function Hero() {
           >
             📱 Pesan Sekarang
           </a>
+          <a
+  href="https://www.airbnb.co.id/rooms/1638853659702945196"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="px-8 py-3 bg-white/20 backdrop-blur border border-white/20 text-white rounded-lg font-semibold hover:bg-white/30 transition-colors"
+>
+  🏠 Lihat di Airbnb
+</a>
+
+<a
+  href="https://www.booking.com/hotel/id/rumah-akbar-villa-taliwang.id.html"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="px-8 py-3 bg-white/20 backdrop-blur border border-white/20 text-white rounded-lg font-semibold hover:bg-white/30 transition-colors"
+>
+  🏨 Booking.com
+</a>
           <button
             onClick={scrollToNext}
             className="px-8 py-3 border-2 border-white text-white rounded-lg font-semibold hover:bg-white/10 transition-colors"
