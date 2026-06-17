@@ -4,22 +4,25 @@ import { motion } from 'framer-motion'
 
 export default function TrustIndicators() {
   const ratings = [
-    {
-      platform: 'Google Maps',
-      score: '5,0/5',
-      reviews: '9 Ulasan'
-    },
-    {
-      platform: 'Airbnb',
-      score: '5,0/5',
-      reviews: '2 Ulasan'
-    },
-    {
-      platform: 'Booking.com',
-      score: '9,0/10',
-      reviews: '3 Ulasan'
-    }
-  ]
+  {
+    platform: 'Google Maps',
+    score: '5,0/5',
+    reviews: '9 Ulasan',
+    url: 'https://maps.google.com/?cid=ISI_CID_GOOGLE_MAPS_ANDA'
+  },
+  {
+    platform: 'Airbnb',
+    score: '5,0/5',
+    reviews: '2 Ulasan',
+    url: 'https://www.airbnb.com/'
+  },
+  {
+    platform: 'Booking.com',
+    score: '9,0/10',
+    reviews: '3 Ulasan',
+    url: 'https://www.booking.com/'
+  }
+]
 
   return (
     <section className="py-20 bg-light">
