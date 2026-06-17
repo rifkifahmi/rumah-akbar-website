@@ -58,9 +58,18 @@ export default function TrustIndicators() {
                 {item.score}
               </p>
 
-              <p className="text-gray-600">
-                {item.reviews}
-              </p>
+             <p className="text-gray-600 mb-4">
+  {item.reviews}
+</p>
+
+<a
+  href={item.url}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-block px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors"
+>
+  Lihat Ulasan
+</a>
             </motion.div>
           ))}
         </div>
