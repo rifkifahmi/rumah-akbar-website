@@ -9,6 +9,7 @@ import Location from './components/Location'
 import Footer from './components/Footer'
 import FloatingWhatsApp from './components/FloatingWhatsApp'
 import TrustIndicators from './components/TrustIndicators'
+import GuestReviews from './components/GuestReviews'
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <Facilities />
       <Pricing />
       <Testimonials />
+      <GuestReviews />
       <FAQ />
       <Location />
       <Footer />
