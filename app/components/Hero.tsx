@@ -50,16 +50,26 @@ export default function Hero() {
       </div>
 
     <div className="relative z-20 max-w-4xl mx-auto px-4 sm:px-6 text-center">
-        {/* Tagline */}
-       <motion.p
+      {/* Tagline */}
+<motion.div
   initial={{ opacity: 0, y: -20 }}
   animate={{ opacity: 1, y: 0 }}
-  transition={{ duration: 0.6, delay: 0.35 }}
+  transition={{ duration: 0.6, delay: 0.1 }}
+  className="inline-block mb-4"
+>
+  <span className="text-accent font-semibold text-sm tracking-widest">
+    PRIVATE FAMILY STAY
+  </span>
+</motion.div>
+
+<motion.p
+  initial={{ opacity: 0, y: -20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.6, delay: 0.15 }}
   className="text-lg text-gray-200 max-w-2xl mx-auto mb-4"
 >
   Guest House privat yang nyaman untuk keluarga, hanya beberapa langkah dari Pantai Balad.
 </motion.p>
-        </motion.div>
 
         {/* Main Heading */}
         <motion.h1
