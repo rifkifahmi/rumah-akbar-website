@@ -80,9 +80,9 @@ export default function Hero() {
           transition={{ delay: 0.4 }}
           className="mb-8"
         >
-          <div className="inline-block bg-white/10 backdrop-blur-md border border-white/20 rounded-full px-6 py-3">
-            ⭐ Dipercaya oleh tamu Google Maps, Airbnb & Booking.com
-          </div>
+          <div className="bg-white/10 backdrop-blur-md px-4 py-2 rounded-full border border-white/20">
+  ⭐ Rating 5.0 Google • Airbnb • Booking
+</div>
         </motion.div>
 
         {/* CTA */}
