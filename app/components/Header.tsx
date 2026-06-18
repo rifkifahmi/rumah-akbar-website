@@ -24,7 +24,8 @@ export default function Header() {
   }
 
   return (
-    <header className="fixed top-0 w-full bg-white/95 backdrop-blur-sm z-50 shadow-sm">
+    return (
+  <header className="hidden md:block fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm z-50 shadow-sm">
       <nav className="max-w-6xl mx-auto px-4 sm:px-6 py-4">
         <div className="flex justify-between items-center">
           {/* Logo */}
