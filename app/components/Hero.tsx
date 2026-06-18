@@ -84,7 +84,7 @@ export default function Hero() {
     ⭐ Rating 5.0 dari tamu
   </div>
 </motion.div>
-        </motion.div>
+       
  {/* Price Card */}
         <motion.div
           initial={{ opacity: 0 }}
