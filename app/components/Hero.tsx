@@ -146,19 +146,7 @@ export default function Hero() {
         </motion.div>
 
         {/* Features */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.6 }}
-          className="flex flex-wrap justify-center gap-6 text-sm md:text-base text-gray-200 mb-10"
-        >
-          <span>🏖️ ±50 Meter ke Pantai Balad</span>
-          <span>🛏️ 2 Kamar Tidur</span>
-          <span>🚿 2 Kamar Mandi</span>
-          <span>👨‍👩‍👧‍👦 Hingga 4 Tamu</span>
-          <span>📶 WiFi Gratis</span>
-        </motion.div>
-
+       
        
 
       </div>
