@@ -150,7 +150,7 @@ export default function Hero() {
 >
   Tersedia pemesanan langsung, Airbnb, dan Booking.com
 </motion.p>
-
+</motion.p>
 
         {/* Features */}
        
