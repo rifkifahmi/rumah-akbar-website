@@ -111,34 +111,38 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5 }}
-          className="flex flex-wrap justify-center gap-4 mb-8"
+          className="flex flex-col items-center gap-3 mb-8"
         >
           <a
-            href={generateWhatsAppUrl()}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-8 py-4 bg-accent text-primary rounded-lg font-semibold hover:bg-accent/90 transition-colors"
-          >
-            📱 Pesan via WhatsApp
-          </a>
+  href={generateWhatsAppUrl()}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="w-full max-w-md px-8 py-4 bg-accent text-primary rounded-lg font-semibold hover:bg-accent/90 transition-colors"
+>
+  📱 Pesan via WhatsApp
+</a>
 
-          <a
-            href="https://www.airbnb.co.id/rooms/1638853659702945196"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-8 py-4 bg-white/10 backdrop-blur border border-white/20 rounded-lg font-semibold hover:bg-white/20 transition-colors"
-          >
-            🏠 Airbnb
-          </a>
+<div className="grid grid-cols-2 gap-3 w-full max-w-md">
 
-          <a
-            href="https://www.booking.com/hotel/id/rumah-akbar-villa-taliwang.id.html"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-8 py-4 bg-white/10 backdrop-blur border border-white/20 rounded-lg font-semibold hover:bg-white/20 transition-colors"
-          >
-            🏨 Booking.com
-          </a>
+  <a
+    href="https://www.airbnb.co.id/rooms/1638853659702945196"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-center px-4 py-3 bg-white/10 backdrop-blur border border-white/20 rounded-lg font-semibold hover:bg-white/20 transition-colors"
+  >
+    🏠 Airbnb
+  </a>
+
+  <a
+    href="https://www.booking.com/hotel/id/rumah-akbar-villa-taliwang.id.html"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-center px-4 py-3 bg-white/10 backdrop-blur border border-white/20 rounded-lg font-semibold hover:bg-white/20 transition-colors"
+  >
+    🏨 Booking
+  </a>
+
+</div>
         </motion.div>
 
         {/* Features */}
