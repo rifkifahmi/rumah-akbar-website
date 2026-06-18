@@ -142,6 +142,9 @@ export default function Hero() {
   >
     🏨 Booking
   </a>
+
+</div>
+
 <motion.p
   initial={{ opacity: 0 }}
   animate={{ opacity: 1 }}
