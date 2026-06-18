@@ -84,7 +84,28 @@ export default function Hero() {
   ⭐ Rating 5.0 Google • Airbnb • Booking
 </div>
         </motion.div>
+ {/* Price Card */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.7 }}
+          className="inline-block"
+        >
+          <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl px-10 py-6">
+            <p className="text-gray-300 text-sm mb-1">
+              Mulai dari
+            </p>
 
+            <h2 className="text-5xl font-bold text-accent">
+              Rp650.000
+            </h2>
+
+            <p className="text-gray-300 mt-2">
+              per malam • hingga 4 tamu
+            </p>
+          </div>
+        </motion.div>
+        
         {/* CTA */}
         <motion.div
           initial={{ opacity: 0 }}
@@ -134,27 +155,7 @@ export default function Hero() {
           <span>📶 WiFi Gratis</span>
         </motion.div>
 
-        {/* Price Card */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.7 }}
-          className="inline-block"
-        >
-          <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl px-10 py-6">
-            <p className="text-gray-300 text-sm mb-1">
-              Mulai dari
-            </p>
-
-            <h2 className="text-5xl font-bold text-accent">
-              Rp650.000
-            </h2>
-
-            <p className="text-gray-300 mt-2">
-              per malam • hingga 4 tamu
-            </p>
-          </div>
-        </motion.div>
+       
 
       </div>
 
