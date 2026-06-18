@@ -74,15 +74,16 @@ export default function Hero() {
         </motion.p>
 
         {/* Trust Text */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.4 }}
-          className="mb-8"
-        >
-          <div className="bg-white/10 backdrop-blur-md px-4 py-2 rounded-full border border-white/20">
- ⭐ Rating 5.0 dari tamu
-</div>
+       <motion.div
+  initial={{ opacity: 0 }}
+  animate={{ opacity: 1 }}
+  transition={{ delay: 0.4 }}
+  className="mb-8 flex justify-center"
+>
+  <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md px-5 py-2 rounded-full border border-white/20">
+    ⭐ Rating 5.0 dari tamu
+  </div>
+</motion.div>
         </motion.div>
  {/* Price Card */}
         <motion.div
@@ -149,11 +150,7 @@ export default function Hero() {
 >
   Tersedia pemesanan langsung, Airbnb, dan Booking.com
 </motion.p>
-  <div className="flex flex-wrap justify-center gap-4 mt-4 text-sm text-gray-200">
-  <span>✓ Reservasi Langsung</span>
-  <span>✓ Airbnb</span>
-  <span>✓ Booking.com</span>
-</div>
+
 </div>
         </motion.div>
 
