@@ -81,7 +81,7 @@ export default function Hero() {
           className="mb-8"
         >
           <div className="bg-white/10 backdrop-blur-md px-4 py-2 rounded-full border border-white/20">
-  ⭐ Rating 5.0 Google • Airbnb • Booking
+ ⭐ Rating 5.0 dari tamu
 </div>
         </motion.div>
  {/* Price Card */}
@@ -96,9 +96,9 @@ export default function Hero() {
               Mulai dari
             </p>
 
-            <h2 className="text-5xl font-bold text-accent">
-              Rp650.000
-            </h2>
+           <h2 className="text-4xl md:text-5xl font-bold text-accent">
+  Rp650.000
+</h2>
 
             <p className="text-gray-300 mt-2">
               per malam • hingga 4 tamu
