@@ -119,7 +119,7 @@ export default function Hero() {
   rel="noopener noreferrer"
   className="w-full max-w-md px-8 py-4 bg-accent text-primary rounded-lg font-semibold hover:bg-accent/90 transition-colors"
 >
-  📱 Pesan via WhatsApp
+  📱 Tanya Ketersediaan
 </a>
 
 <div className="grid grid-cols-2 gap-3 w-full max-w-md">
@@ -141,7 +141,19 @@ export default function Hero() {
   >
     🏨 Booking
   </a>
-
+<motion.p
+  initial={{ opacity: 0 }}
+  animate={{ opacity: 1 }}
+  transition={{ delay: 0.6 }}
+  className="text-sm text-gray-300 mt-4"
+>
+  Tersedia pemesanan langsung, Airbnb, dan Booking.com
+</motion.p>
+  <div className="flex flex-wrap justify-center gap-4 mt-4 text-sm text-gray-200">
+  <span>✓ Reservasi Langsung</span>
+  <span>✓ Airbnb</span>
+  <span>✓ Booking.com</span>
+</div>
 </div>
         </motion.div>
 
