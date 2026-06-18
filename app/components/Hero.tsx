@@ -150,15 +150,12 @@ export default function Hero() {
 >
   Tersedia pemesanan langsung, Airbnb, dan Booking.com
 </motion.p>
-</motion.p>
 
         {/* Features */}
        
        
 
-      </div>
-
-      {/* Scroll Indicator */}
+       {/* Scroll Indicator */}
       <motion.button
         animate={{ y: [0, 10, 0] }}
         transition={{
