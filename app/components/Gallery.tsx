@@ -41,16 +41,17 @@ const GALLERY_IMAGES = [
     title: 'Dapur',
     src: '/images/gallery/06-kitchen.png',
   },
+   {
+    id: 7,
+    title: 'Area Dapur',
+    src: '/images/gallery/07-kitchen-appliances.png',
+  },
   {
     id: 3,
     title: 'Halaman dan Parkir',
     src: '/images/gallery/03-halaman-dan-parkir.png.png',
   },
-  {
-    id: 7,
-    title: 'Area Dapur',
-    src: '/images/gallery/07-kitchen-appliances.png',
-  },
+ 
 ]
 export default function Gallery() {
   const [selectedImage, setSelectedImage] =
@@ -97,7 +98,7 @@ export default function Gallery() {
               />
 
               <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-3">
-  <p className="text-white text-sm font-semibold">
+  <p className="text-white text-base font-bold">
     {image.title}
   </p>
               </div>
