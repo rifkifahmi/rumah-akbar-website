@@ -9,7 +9,7 @@ export default function BookingOptions() {
     {
       title: 'Pesan Langsung',
       subtitle: 'WhatsApp',
-      icon: '📱',
+      logo: '/images/Logos/whatsapp.png',
       description:
         'Hubungi kami langsung untuk mengecek ketersediaan dan mendapatkan penawaran terbaik.',
       benefits: [
@@ -24,7 +24,7 @@ export default function BookingOptions() {
     {
       title: 'Airbnb',
       subtitle: 'Booking Aman',
-      icon: '🏠',
+      logo: '/images/Logos/airbnb.png',
       description:
         'Nikmati kemudahan pembayaran dan promo yang tersedia melalui Airbnb.',
       benefits: [
@@ -39,7 +39,7 @@ export default function BookingOptions() {
     {
       title: 'Booking.com',
       subtitle: 'Booking Praktis',
-      icon: '🏨',
+      logo: '/images/Logos/bookingdotcom.png',
       description:
         'Pesan dengan mudah melalui Booking.com dan nikmati promo yang tersedia.',
       benefits: [
@@ -54,7 +54,7 @@ export default function BookingOptions() {
   ]
 
   return (
-    <section id="booking-options" className="py-20 bg-white">
+    <section id="booking-options" className="py-20 bg-light">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
 
         {/* Header */}
@@ -69,8 +69,8 @@ export default function BookingOptions() {
           </h2>
 
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Rumah Akbar Guest House tersedia untuk pemesanan langsung
-            maupun melalui platform terpercaya.
+            Rumah Akbar Guest House tersedia untuk pemesanan langsung maupun
+            melalui platform terpercaya.
           </p>
         </motion.div>
 
@@ -90,10 +90,28 @@ export default function BookingOptions() {
                   : 'bg-white border-gray-200'
               }`}
             >
-              <div className="text-5xl mb-4">
-                {option.icon}
+
+              {/* Logo */}
+              <div className="mb-5">
+                <div className="bg-white rounded-xl inline-flex p-3 shadow-md">
+                  <Image
+                    src={option.logo}
+                    alt={option.title}
+                    width={60}
+                    height={60}
+                    className="object-contain"
+                  />
+                </div>
               </div>
 
+              {/* Badge */}
+              {option.featured && (
+                <div className="inline-block px-3 py-1 bg-accent text-primary text-xs font-bold rounded-full mb-4">
+                  REKOMENDASI
+                </div>
+              )}
+
+              {/* Title */}
               <h3
                 className={`text-2xl font-bold mb-2 ${
                   option.featured
@@ -104,16 +122,12 @@ export default function BookingOptions() {
                 {option.title}
               </h3>
 
-              <p
-                className={`font-medium mb-4 ${
-                  option.featured
-                    ? 'text-accent'
-                    : 'text-accent'
-                }`}
-              >
+              {/* Subtitle */}
+              <p className="text-accent font-medium mb-4">
                 {option.subtitle}
               </p>
 
+              {/* Description */}
               <p
                 className={`mb-6 ${
                   option.featured
@@ -124,6 +138,7 @@ export default function BookingOptions() {
                 {option.description}
               </p>
 
+              {/* Benefits */}
               <ul className="space-y-3 mb-8">
                 {option.benefits.map((benefit) => (
                   <li
@@ -139,6 +154,7 @@ export default function BookingOptions() {
                 ))}
               </ul>
 
+              {/* Button */}
               <a
                 href={option.url}
                 target="_blank"
@@ -151,6 +167,7 @@ export default function BookingOptions() {
               >
                 {option.button}
               </a>
+
             </motion.div>
           ))}
         </div>
@@ -160,12 +177,13 @@ export default function BookingOptions() {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          className="mt-12 text-center"
+          className="mt-12"
         >
-          <div className="inline-block bg-light rounded-xl px-6 py-4">
+          <div className="bg-white rounded-2xl shadow-md p-6 text-center max-w-4xl mx-auto">
             <p className="text-gray-700">
-              💡 Ingin mendapatkan penawaran terbaik?
-              Hubungi kami langsung melalui WhatsApp untuk mengecek promo dan ketersediaan terbaru.
+              💡 <strong>Ingin mendapatkan penawaran terbaik?</strong><br />
+              Hubungi kami langsung melalui WhatsApp untuk mengecek promo,
+              ketersediaan tanggal, dan harga terbaik yang tersedia.
             </p>
           </div>
         </motion.div>
