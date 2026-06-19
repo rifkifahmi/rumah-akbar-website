@@ -50,7 +50,7 @@ export default function TrustIndicators() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="bg-white rounded-xl shadow-lg p-8 text-center hover:shadow-xl transition-all"
+              className="bg-white rounded-xl shadow-lg p-8 text-center hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
             >
              <div className="flex justify-center mb-5">
   <Image
@@ -70,11 +70,9 @@ className="object-contain h-16 w-auto"
                 {item.score}
               </p>
 <div className="inline-block bg-green-100 text-green-700 text-xs font-semibold px-3 py-1 rounded-full mb-3">
-  ✓ Terverifikasi
+  ✓ Rating Terverifikasi
 </div>
-             <p className="text-gray-600 mb-4">
-  {item.reviews}
-</p>
+            
 
 <a
   href={item.url}
@@ -82,7 +80,7 @@ className="object-contain h-16 w-auto"
   rel="noopener noreferrer"
   className="inline-block px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors"
 >
-  Lihat Ulasan
+  Lihat Ulasan Asli
 </a>
             </motion.div>
           ))}
