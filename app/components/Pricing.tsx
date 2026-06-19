@@ -5,8 +5,8 @@ import { generateWhatsAppUrl } from '@/lib/utils'
 
 export default function Pricing() {
   return (
-    <section id="pricing" className="py-20 bg-light">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6">
+    <section id="pricing" className="py-24 bg-light">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6">
 
         {/* Header */}
         <motion.div
@@ -15,88 +15,114 @@ export default function Pricing() {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="text-4xl font-bold text-primary mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
             Harga Fleksibel
           </h2>
 
-          <p className="text-gray-600 max-w-2xl mx-auto">
-            Mulai dari Rp650.000 per malam untuk seluruh rumah privat.
-            Harga dapat berbeda tergantung tanggal menginap dan promo yang tersedia.
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            Pilihan terbaik untuk keluarga yang ingin menikmati rumah privat
+            dekat Pantai Balad dengan harga yang dapat disesuaikan.
           </p>
         </motion.div>
 
-        {/* Card */}
+        {/* Main Card */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, scale: 0.95 }}
+          whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
-          className="bg-white rounded-2xl shadow-xl overflow-hidden"
+          transition={{ duration: 0.5 }}
+          className="relative overflow-hidden rounded-3xl bg-primary text-white shadow-2xl"
         >
-          {/* Top Bar */}
-          <div className="bg-primary text-white text-center py-5">
-            <p className="text-xl font-bold">
-              Mulai Dari
-            </p>
-          </div>
+          {/* Accent Glow */}
+          <div className="absolute top-0 right-0 w-64 h-64 bg-accent/20 blur-3xl rounded-full" />
 
-          <div className="p-8 md:p-12 text-center">
-
-            {/* Price */}
-            <div className="text-5xl md:text-6xl font-bold text-accent mb-2">
-              Rp650.000
-            </div>
-
-            <p className="text-gray-500 mb-5">
-              per malam
-            </p>
+          <div className="relative z-10 p-8 md:p-14">
 
             {/* Badge */}
-            <div className="inline-block bg-green-100 text-green-700 text-sm font-semibold px-4 py-2 rounded-full mb-8">
-              ✓ Rumah Privat untuk Keluarga
+            <div className="inline-block bg-accent text-primary font-bold px-4 py-2 rounded-full mb-8">
+              Rumah Privat untuk Keluarga
             </div>
 
-            {/* Features */}
-            <div className="max-w-md mx-auto text-left">
-              <ul className="space-y-4 text-gray-700">
-                <li>✓ Rumah privat hingga 4 tamu</li>
-                <li>✓ 2 kamar tidur ber-AC</li>
-                <li>✓ 2 kamar mandi</li>
-                <li>✓ Dapur lengkap</li>
-                <li>✓ WiFi gratis</li>
-                <li>✓ Parkir gratis</li>
-              </ul>
+            {/* Price */}
+            <div className="text-center mb-10">
+              <p className="text-gray-300 mb-2">
+                Mulai dari
+              </p>
+
+              <h3 className="text-5xl md:text-7xl font-bold text-accent">
+                Rp650.000
+              </h3>
+
+              <p className="text-gray-300 mt-2">
+                per malam
+              </p>
+            </div>
+
+            {/* Benefits */}
+            <div className="grid md:grid-cols-3 gap-4 mb-10">
+
+              <div className="bg-white/10 backdrop-blur-md rounded-xl p-4 text-center">
+                <div className="text-3xl mb-2">🏠</div>
+                <p className="font-semibold">
+                  Seluruh Rumah
+                </p>
+              </div>
+
+              <div className="bg-white/10 backdrop-blur-md rounded-xl p-4 text-center">
+                <div className="text-3xl mb-2">👨‍👩‍👧‍👦</div>
+                <p className="font-semibold">
+                  Hingga 4 Tamu
+                </p>
+              </div>
+
+              <div className="bg-white/10 backdrop-blur-md rounded-xl p-4 text-center">
+                <div className="text-3xl mb-2">💰</div>
+                <p className="font-semibold">
+                  Bisa Nego Harga
+                </p>
+              </div>
+
             </div>
 
             {/* Promo Box */}
-            <div className="mt-10 bg-light rounded-xl p-6 text-left border border-gray-200">
-              <h3 className="font-bold text-primary mb-3">
-                💡 Dapatkan Harga Terbaik
-              </h3>
+            <div className="bg-white text-gray-700 rounded-2xl p-6 mb-8">
 
-              <p className="text-gray-600 mb-4">
+              <h4 className="font-bold text-primary text-lg mb-3">
+                💡 Dapatkan Penawaran Terbaik
+              </h4>
+
+              <p className="mb-4">
                 Harga dapat berbeda tergantung:
               </p>
 
-              <ul className="space-y-2 text-gray-600">
-                <li>• Tanggal menginap</li>
-                <li>• Lama menginap</li>
-                <li>• Promo Airbnb & Booking.com</li>
+              <ul className="space-y-2">
+                <li>✓ Tanggal menginap</li>
+                <li>✓ Lama menginap</li>
+                <li>✓ Promo Airbnb & Booking.com</li>
+                <li>✓ Jumlah tamu</li>
               </ul>
 
               <p className="mt-4 text-sm text-gray-500">
-                Hubungi kami untuk mengecek promo dan penawaran terbaik yang tersedia.
+                Hubungi kami untuk mengecek promo yang sedang tersedia.
               </p>
+
             </div>
 
             {/* CTA */}
-            <a
-              href={generateWhatsAppUrl()}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block mt-8 px-8 py-4 bg-accent text-primary font-bold rounded-lg hover:bg-accent/90 transition-all duration-300"
-            >
-              📱 Tanya Harga Terbaik
-            </a>
+            <div className="text-center">
+              <a
+                href={generateWhatsAppUrl()}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block px-10 py-5 bg-accent text-primary font-bold rounded-xl text-lg hover:scale-105 transition-all duration-300 shadow-lg"
+              >
+                📱 Tanya Harga Terbaik
+              </a>
+
+              <p className="text-gray-300 text-sm mt-4">
+                Respon cepat melalui WhatsApp
+              </p>
+            </div>
 
           </div>
         </motion.div>
