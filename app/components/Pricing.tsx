@@ -25,51 +25,75 @@ export default function Pricing() {
           </p>
         </motion.div>
 
-        {/* Price Card */}
+        {/* Card */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           className="bg-white rounded-2xl shadow-xl overflow-hidden"
         >
-          <div className="bg-primary text-white text-center py-4">
-            <p className="text-lg font-semibold">
+          {/* Top Bar */}
+          <div className="bg-primary text-white text-center py-5">
+            <p className="text-xl font-bold">
               Mulai Dari
             </p>
           </div>
 
-          <div className="p-8 text-center">
+          <div className="p-8 md:p-12 text-center">
 
-            <div className="text-5xl font-bold text-accent mb-6">
+            {/* Price */}
+            <div className="text-5xl md:text-6xl font-bold text-accent mb-2">
               Rp650.000
             </div>
 
-            <ul className="space-y-3 text-gray-700 text-left max-w-md mx-auto">
-              <li>✓ Rumah privat hingga 4 tamu</li>
-              <li>✓ 2 kamar tidur ber-AC</li>
-              <li>✓ 2 kamar mandi</li>
-              <li>✓ Dapur lengkap</li>
-              <li>✓ WiFi gratis</li>
-              <li>✓ Parkir gratis</li>
-            </ul>
+            <p className="text-gray-500 mb-5">
+              per malam
+            </p>
 
-            <div className="mt-8 bg-light rounded-xl p-4 text-left">
-              <p className="font-semibold text-primary mb-2">
-                💡 Harga dapat berbeda tergantung:
+            {/* Badge */}
+            <div className="inline-block bg-green-100 text-green-700 text-sm font-semibold px-4 py-2 rounded-full mb-8">
+              ✓ Rumah Privat untuk Keluarga
+            </div>
+
+            {/* Features */}
+            <div className="max-w-md mx-auto text-left">
+              <ul className="space-y-4 text-gray-700">
+                <li>✓ Rumah privat hingga 4 tamu</li>
+                <li>✓ 2 kamar tidur ber-AC</li>
+                <li>✓ 2 kamar mandi</li>
+                <li>✓ Dapur lengkap</li>
+                <li>✓ WiFi gratis</li>
+                <li>✓ Parkir gratis</li>
+              </ul>
+            </div>
+
+            {/* Promo Box */}
+            <div className="mt-10 bg-light rounded-xl p-6 text-left border border-gray-200">
+              <h3 className="font-bold text-primary mb-3">
+                💡 Dapatkan Harga Terbaik
+              </h3>
+
+              <p className="text-gray-600 mb-4">
+                Harga dapat berbeda tergantung:
               </p>
 
-              <ul className="space-y-1 text-sm text-gray-600">
+              <ul className="space-y-2 text-gray-600">
                 <li>• Tanggal menginap</li>
                 <li>• Lama menginap</li>
                 <li>• Promo Airbnb & Booking.com</li>
               </ul>
+
+              <p className="mt-4 text-sm text-gray-500">
+                Hubungi kami untuk mengecek promo dan penawaran terbaik yang tersedia.
+              </p>
             </div>
 
+            {/* CTA */}
             <a
               href={generateWhatsAppUrl()}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block mt-8 px-8 py-4 bg-accent text-primary font-bold rounded-lg hover:bg-accent/90 transition"
+              className="inline-block mt-8 px-8 py-4 bg-accent text-primary font-bold rounded-lg hover:bg-accent/90 transition-all duration-300"
             >
               📱 Tanya Harga Terbaik
             </a>
