@@ -23,19 +23,19 @@ export default function Home() {
   <TrustIndicators />
 
   <Gallery />
-
+    
+  <Testimonials />
+    
   <Facilities />
 
-  <Testimonials />
-
-  <GuestReviews />
+ <Location />
 
   <Pricing />
+    
     <BookingOptions />
-
-  <Location />
-
+ 
   <FAQ />
+    
     <FinalCTA />
 
   <Footer />
