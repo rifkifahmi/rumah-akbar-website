@@ -14,7 +14,7 @@ behavior: 'smooth',
 
 return ( <section
    id="home"
-   className="relative min-h-[75vh] md:min-h-screen flex items-center justify-center overflow-hidden text-white"
+   className="relative min-h-[70vh] md:min-h-screen flex items-center justify-center overflow-hidden text-white"
  >
 {/* Background */} <Image
      src="/images/gallery/02-eksterior-rumah-akbar-cover.png.png"
@@ -45,7 +45,7 @@ return ( <section
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className="text-4xl md:text-6xl font-bold mb-4"
+      className="text-3xl md:text-6xl font-bold mb-4"
     >
       Rumah Akbar Guest House
     </motion.h1>
@@ -89,16 +89,16 @@ return ( <section
       transition={{ delay: 0.5 }}
       className="inline-block mb-6"
     >
-      <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl px-8 py-6">
+      <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl px-6 py-4">
         <p className="text-gray-300 text-sm mb-1">
           Mulai dari
         </p>
 
-        <h2 className="text-3xl md:text-4xl font-bold text-accent">
+        <h2 className="text-2xl md:text-4xl font-bold text-accent">
           Rp650.000
         </h2>
 
-        <p className="text-gray-300 mt-2">
+       className="text-gray-300 mt-1 text-sm"
           per malam • hingga 4 tamu
         </p>
       </div>
