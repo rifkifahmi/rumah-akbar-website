@@ -78,7 +78,7 @@ export default function Gallery() {
         </motion.div>
 
         {/* Gallery Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 auto-rows-auto">
           {GALLERY_IMAGES.map((image, index) => (
             <motion.div
               key={image.id}
@@ -87,7 +87,11 @@ export default function Gallery() {
               viewport={{ once: true }}
               transition={{ duration: 0.3, delay: index * 0.05 }}
               onClick={() => setSelectedImage(image)}
-              className="relative h-64 rounded-lg overflow-hidden cursor-pointer group"
+             className={`relative rounded-lg overflow-hidden cursor-pointer group ${
+  index === 0
+    ? 'sm:col-span-2 sm:row-span-2 h-[520px]'
+    : 'h-64'
+}`}
             >
               <Image
                 src={image.src}
@@ -106,7 +110,24 @@ export default function Gallery() {
           ))}
         </div>
       </div>
+<div className="text-center mt-12">
+  <h3 className="text-2xl font-bold text-primary mb-3">
+    Tertarik Menginap di Rumah Akbar?
+  </h3>
 
+  <p className="text-gray-600 mb-6">
+    Hubungi kami untuk mengecek ketersediaan tanggal menginap.
+  </p>
+
+  <a
+    href={generateWhatsAppUrl()}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-block px-8 py-4 bg-accent text-primary font-semibold rounded-lg hover:bg-accent/90 transition"
+  >
+    📱 Tanya Ketersediaan
+  </a>
+</div>
       {/* Lightbox Modal */}
       {selectedImage && (
         <motion.div
