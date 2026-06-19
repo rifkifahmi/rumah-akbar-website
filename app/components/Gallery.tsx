@@ -100,7 +100,6 @@ export default function Gallery() {
   <p className="text-white text-sm font-semibold">
     {image.title}
   </p>
-</div>
               </div>
             </motion.div>
           ))}
