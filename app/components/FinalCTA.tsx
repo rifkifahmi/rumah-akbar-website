@@ -5,14 +5,14 @@ import { generateWhatsAppUrl } from '@/lib/utils'
 
 export default function FinalCTA() {
   return (
-    <section className="py-20 bg-primary text-white">
+   <section className="py-14 md:py-16 bg-primary text-white">
       <div className="max-w-4xl mx-auto px-6 text-center">
 
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-3xl md:text-5xl font-bold mb-6"
+          className="text-3xl md:text-5xl font-bold mb-4"
         >
           Siap Menginap di Pantai Balad?
         </motion.h2>
@@ -21,7 +21,7 @@ export default function FinalCTA() {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          className="text-lg text-gray-300 mb-8"
+          className="text-lg text-gray-300 mb-6"
         >
           Nikmati suasana tenang, lokasi dekat pantai,
           dan rumah privat yang nyaman untuk keluarga.
