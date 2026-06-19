@@ -29,7 +29,7 @@ return ( <section
   <div className="absolute inset-0 bg-black/60" />
 
   {/* Content */}
-  <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
+ <div className="relative z-10 max-w-4xl mx-auto px-6 text-center pt-20 md:pt-0">
 
     {/* Tagline */}
     <motion.p
