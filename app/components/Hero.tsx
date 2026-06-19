@@ -57,18 +57,11 @@ return ( <section
       transition={{ delay: 0.2 }}
       className="text-xl md:text-2xl text-gray-200 mb-4"
     >
-      Villa Privat Dekat Pantai Balad untuk Keluarga & Wisatawan
+      Villa Privat Dekat Pantai Balad Taliwang untuk Keluarga & Wisatawan
     </motion.p>
 
     {/* Location */}
-    <motion.p
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ delay: 0.3 }}
-      className="text-gray-300 mb-6"
-    >
-      Pantai Balad, Taliwang, Sumbawa Barat, NTB
-    </motion.p>
+   
 
     {/* Trust Badge */}
     <motion.div
