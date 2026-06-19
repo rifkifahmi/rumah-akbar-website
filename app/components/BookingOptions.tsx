@@ -74,7 +74,6 @@ return ( <section className="py-20 bg-white"> <div className="max-w-6xl mx-auto 
 
   </div>
 </section>
-```
 
 )
 }
