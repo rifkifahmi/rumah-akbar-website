@@ -71,7 +71,7 @@ return ( <section
         Mulai dari
       </p>
 
-     className="text-3xl md:text-4xl font-bold text-accent"
+    <h2 className="text-3xl md:text-4xl font-bold text-accent"
         Rp650.000
       </h2>
 
