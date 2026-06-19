@@ -1,25 +1,29 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 
 export default function TrustIndicators() {
-  const ratings = [
+ const ratings = [
   {
     platform: 'Google Maps',
     score: '5,0/5',
     reviews: '9 Ulasan',
+    logo: '/images/logos/googlemaps.png',
     url: 'https://maps.app.goo.gl/71U1utDetDFoosc76'
   },
   {
     platform: 'Airbnb',
     score: '5,0/5',
     reviews: '2 Ulasan',
-    url: 'https://www.airbnb.co.id/rooms/1638853659702945196?check_in=2026-06-17&check_out=2026-06-22&guests=1&adults=1&s=67&unique_share_id=e91340b1-9c57-4b41-a63f-8cf2316675be'
+    logo: '/images/logos/airbnb.png',
+    url: 'https://www.airbnb.co.id/rooms/1638853659702945196'
   },
   {
     platform: 'Booking.com',
     score: '9,0/10',
     reviews: '3 Ulasan',
+    logo: '/images/logos/bookingdotcom.png',
     url: 'https://www.booking.com/hotel/id/rumah-akbar-villa-taliwang.id.html'
   }
 ]
@@ -38,7 +42,7 @@ export default function TrustIndicators() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {ratings.map((item, index) => (
             <motion.div
               key={item.platform}
@@ -46,9 +50,17 @@ export default function TrustIndicators() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="bg-white rounded-lg shadow-lg p-8 text-center"
+              className="bg-white rounded-xl shadow-lg p-8 text-center hover:shadow-xl transition-all"
             >
-              <div className="text-5xl mb-4">⭐</div>
+             <div className="flex justify-center mb-5">
+  <Image
+    src={item.logo}
+    alt={item.platform}
+    width={80}
+height={80}
+className="object-contain h-16 w-auto"
+  />
+</div>
 
               <h3 className="text-xl font-bold text-primary mb-2">
                 {item.platform}
@@ -57,7 +69,9 @@ export default function TrustIndicators() {
               <p className="text-3xl font-bold text-accent mb-2">
                 {item.score}
               </p>
-
+<div className="inline-block bg-green-100 text-green-700 text-xs font-semibold px-3 py-1 rounded-full mb-3">
+  ✓ Terverifikasi
+</div>
              <p className="text-gray-600 mb-4">
   {item.reviews}
 </p>
