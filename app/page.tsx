@@ -27,16 +27,18 @@ export default function Home() {
   <Testimonials />
     
   <Facilities />
+     <Pricing />
+    <GuestReviews />
+     <BookingOptions />
 
  <Location />
 
-  <Pricing />
+ 
     
-    <BookingOptions />
+   
  
   <FAQ />
     
-    <FinalCTA />
 
   <Footer />
 
