@@ -14,7 +14,7 @@ behavior: 'smooth',
 
 return ( <section
    id="home"
-   className="relative min-h-[70vh] md:min-h-screen flex items-center justify-center overflow-hidden text-white"
+   className="relative min-h-[75vh] md:min-h-screen flex items-center justify-center overflow-hidden text-white pt-12 pb-8"
  >
 {/* Background */} <Image
      src="/images/gallery/02-eksterior-rumah-akbar-cover.png.png"
@@ -23,8 +23,6 @@ return ( <section
      priority
      className="object-cover"
    />
-
-```
   {/* Overlay */}
   <div className="absolute inset-0 bg-black/60" />
 
