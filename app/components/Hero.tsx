@@ -109,7 +109,5 @@ return ( <section
     <ChevronDown size={32} />
   </motion.button>
 </section>
-```
-
 )
 }
