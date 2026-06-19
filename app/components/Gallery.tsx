@@ -12,29 +12,9 @@ const GALLERY_IMAGES = [
     src: '/images/gallery/02-eksterior-rumah-akbar-cover.png.png',
   },
   {
-    id: 3,
-    title: 'Halaman dan Parkir',
-    src: '/images/gallery/03-halaman-dan-parkir.png.png',
-  },
-  {
     id: 4,
     title: 'Ruang Keluarga',
     src: '/images/gallery/04-living-room-main.png',
-  },
-  {
-    id: 5,
-    title: 'Area Makan',
-    src: '/images/gallery/05-dining-area.png',
-  },
-  {
-    id: 6,
-    title: 'Dapur',
-    src: '/images/gallery/06-kitchen.png',
-  },
-  {
-    id: 7,
-    title: 'Area Dapur',
-    src: '/images/gallery/07-kitchen-appliances.png',
   },
   {
     id: 8,
@@ -51,8 +31,27 @@ const GALLERY_IMAGES = [
     title: 'Kamar Mandi',
     src: '/images/gallery/10-bathroom.png.png',
   },
+  {
+    id: 5,
+    title: 'Area Makan',
+    src: '/images/gallery/05-dining-area.png',
+  },
+  {
+    id: 6,
+    title: 'Dapur',
+    src: '/images/gallery/06-kitchen.png',
+  },
+  {
+    id: 3,
+    title: 'Halaman dan Parkir',
+    src: '/images/gallery/03-halaman-dan-parkir.png.png',
+  },
+  {
+    id: 7,
+    title: 'Area Dapur',
+    src: '/images/gallery/07-kitchen-appliances.png',
+  },
 ]
-
 export default function Gallery() {
   const [selectedImage, setSelectedImage] =
     useState<(typeof GALLERY_IMAGES)[0] | null>(null)
@@ -97,10 +96,11 @@ export default function Gallery() {
                 sizes="(max-width: 768px) 100vw, 25vw"
               />
 
-              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-colors flex items-end justify-start p-4">
-                <div className="text-white opacity-0 group-hover:opacity-100 transition-opacity">
-                  <p className="font-semibold">{image.title}</p>
-                </div>
+              <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-3">
+  <p className="text-white text-sm font-semibold">
+    {image.title}
+  </p>
+</div>
               </div>
             </motion.div>
           ))}
