@@ -14,7 +14,7 @@ behavior: 'smooth',
 
 return ( <section
    id="home"
-  className="relative min-h-[75vh] md:min-h-screen flex items-center justify-center overflow-hidden text-white py-12"
+  className="relative min-h-[75vh] md:min-h-screen flex items-center justify-center overflow-hidden text-white py-12" >
 {/* Background */} <Image
      src="/images/gallery/02-eksterior-rumah-akbar-cover.png.png"
      alt="Rumah Akbar Guest House"
