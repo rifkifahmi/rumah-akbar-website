@@ -63,7 +63,7 @@ return ( <section
     </motion.p>
 
     <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-full px-5 py-2 mb-8">
-      ⭐ Rating 5.0 dari tamu
+     ⭐ Rating 5.0 dari tamu Google, Airbnb & Booking
     </div>
 
     <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl px-8 py-6 inline-block mb-8">
@@ -71,7 +71,7 @@ return ( <section
         Mulai dari
       </p>
 
-      <h2 className="text-4xl md:text-5xl font-bold text-accent">
+     className="text-3xl md:text-4xl font-bold text-accent"
         Rp650.000
       </h2>
 
