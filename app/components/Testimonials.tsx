@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import { generateWhatsAppUrl } from '@/lib/utils'
 
 const YOUTUBE_VIDEO_ID = 'oer8AAAzWjw'
 
@@ -19,16 +20,16 @@ description:
 'Rumah privat yang nyaman untuk keluarga maupun rombongan kecil.',
 },
 {
-icon: '🛏️',
-title: 'Fasilitas Lengkap',
-description:
-'2 kamar tidur, 2 kamar mandi, dapur lengkap, AC, TV, dan WiFi.',
+  icon: '🔒',
+  title: 'Privasi & Nyaman',
+  description:
+  'Rumah privat tanpa berbagi area dengan tamu lain, cocok untuk keluarga dan rombongan kecil.',
 },
 {
-icon: '🌳',
-title: 'Suasana Nyaman',
-description:
-'Halaman luas dan rindang untuk bersantai bersama keluarga.',
+  icon: '🌿',
+  title: 'Suasana Asri',
+  description:
+  'Nikmati suasana tenang dengan halaman luas dan hammock untuk bersantai.',
 },
 ]
 
@@ -58,7 +59,7 @@ Mengapa Memilih Rumah Akbar Guest House? </h2>
       className="max-w-4xl mx-auto mb-16"
     >
       <p className="text-center text-gray-600 mb-4">
-        Lihat langsung suasana Rumah Akbar Guest House melalui video berikut
+        Tonton video singkat untuk melihat suasana dan fasilitas Rumah Akbar Guest House
       </p>
 
       <div className="rounded-lg overflow-hidden shadow-2xl">
@@ -110,7 +111,7 @@ Mengapa Memilih Rumah Akbar Guest House? </h2>
       className="mt-16 text-center"
     >
       <a
-        href="https://wa.me/6287784786101"
+        href={generateWhatsAppUrl()}
         target="_blank"
         rel="noopener noreferrer"
         className="inline-block px-8 py-3 bg-primary text-white rounded-lg font-semibold hover:bg-primary/90 transition-colors"
