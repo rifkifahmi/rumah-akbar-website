@@ -43,7 +43,6 @@ className="text-center mb-12"
 > <h2 className="text-4xl font-bold text-primary mb-4">
 Mengapa Memilih Rumah Akbar Guest House? </h2>
 
-```
       <p className="text-gray-600 max-w-2xl mx-auto">
         Kenyamanan, privasi, dan lokasi strategis untuk pengalaman
         menginap yang menyenangkan.
@@ -116,7 +115,7 @@ Mengapa Memilih Rumah Akbar Guest House? </h2>
         rel="noopener noreferrer"
         className="inline-block px-8 py-3 bg-primary text-white rounded-lg font-semibold hover:bg-primary/90 transition-colors"
       >
-        📱 Hubungi Kami via WhatsApp
+        📱Tanya Ketersediaan Sekarang
       </a>
     </motion.div>
   </div>
