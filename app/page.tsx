@@ -11,6 +11,7 @@ import FloatingWhatsApp from './components/FloatingWhatsApp'
 import TrustIndicators from './components/TrustIndicators'
 import GuestReviews from './components/GuestReviews'
 import BookingOptions from './components/BookingOptions'
+import FinalCTA from './components/FinalCTA'
 
 export default function Home() {
   return (
@@ -35,6 +36,7 @@ export default function Home() {
   <Location />
 
   <FAQ />
+    <FinalCTA />
 
   <Footer />
 
