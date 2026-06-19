@@ -38,7 +38,13 @@ export default function Location() {
               <div className="text-3xl text-accent">📍</div>
               <div>
                 <h3 className="font-semibold text-primary text-lg mb-1">Alamat</h3>
-                <p className="text-gray-600">{PROPERTY_INFO.location}</p>
+                <p className="text-gray-600">
+  {PROPERTY_INFO.location}
+</p>
+
+<p className="text-accent font-semibold mt-2">
+  🏖️ ±50 meter ke Pantai Balad
+</p>
               </div>
             </div>
 
@@ -66,17 +72,17 @@ export default function Location() {
               className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white rounded-lg font-semibold hover:bg-primary/90 transition-colors"
             >
               <MapPin size={20} />
-              Dapatkan Petunjuk Arah
+              Buka di Google Maps
             </a>
 
             {/* Opening Hours */}
             <div className="bg-light rounded-lg p-6 border-l-4 border-accent">
               <h3 className="font-semibold text-primary mb-3">Jam Operasional</h3>
               <ul className="space-y-2 text-gray-600">
-                <li>Check-in: 14:00 - 22:00</li>
-                <li>Check-out: 12:00 (maksimal 13:00)</li>
-                <li>Flexible check-in/out (hubungi via WhatsApp)</li>
-              </ul>
+  <li>🕑 Check-in : 14.00 WIB</li>
+  <li>🕛 Check-out : 12.00 WIB</li>
+  <li>📱 Butuh jadwal khusus? Hubungi kami via WhatsApp</li>
+</ul>
             </div>
           </motion.div>
 
@@ -86,32 +92,22 @@ export default function Location() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="rounded-lg overflow-hidden shadow-2xl h-96 lg:h-full min-h-96"
+            className="rounded-xl overflow-hidden shadow-2xl h-[450px] lg:h-[520px]"
           >
-            <iframe
-              src={`https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3945.5234567890!2d117.3!3d-8.45!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2de5a0a1234567%3A0x1234567890abcdef!2sRumah%20Akbar%20Guest%20House!5e0!3m2!1sen!2sid!4v1623456789012`}
-              width="100%"
-              height="100%"
-              style={{ border: 0 }}
-              allowFullScreen={true}
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            />
+           <iframe
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5576.573770147825!2d116.79440854765078!3d-8.76412352867855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dcc5d853341eb8d%3A0x2af2b63173324cb5!2sGuest%20House%20Rumah%20Akbar!5e0!3m2!1sid!2sid!4v1781866855345!5m2!1sid!2sid"
+  width="100%"
+  height="100%"
+  style={{ border: 0 }}
+  allowFullScreen
+  loading="lazy"
+  referrerPolicy="no-referrer-when-downgrade"
+/>
           </motion.div>
         </div>
 
         {/* Map Note */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          className="mt-8 p-6 bg-light rounded-lg border-2 border-dashed border-gray-300"
-        >
-          <p className="text-center text-gray-600">
-            💡 <strong>Catatan:</strong> Update koordinat Google Maps di env file dengan lokasi actual Anda untuk hasil maksimal.
-          </p>
-        </motion.div>
+       
       </div>
     </section>
   )
