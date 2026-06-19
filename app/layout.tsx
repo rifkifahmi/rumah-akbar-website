@@ -10,19 +10,26 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://rumahakbar.vercel.app'),
-  title: `${PROPERTY_INFO.name} | ${PROPERTY_INFO.tagline}`,
-  description: PROPERTY_INFO.description,
-  keywords: [
-    'Guest House',
-    'Rumah Akbar',
-    'Taliwang',
-    'Sumbawa',
-    'Private Family Stay',
-    'Pantai Balad',
-    'Penginapan',
-    'Booking',
-  ],
+ metadataBase: new URL(
+  process.env.NEXT_PUBLIC_SITE_URL ||
+  'https://www.rumahakbar.com'
+),
+  title:
+'Rumah Akbar Guest House | Villa Privat Dekat Pantai Balad Taliwang',
+ description:
+'Rumah Akbar Guest House adalah villa privat dekat Pantai Balad Taliwang, Sumbawa Barat. Cocok untuk keluarga hingga 4 tamu dengan 2 kamar tidur, dapur lengkap, WiFi gratis, dan halaman luas.',
+ keywords: [
+'guest house taliwang',
+'villa taliwang',
+'penginapan taliwang',
+'penginapan sumbawa barat',
+'villa pantai balad',
+'rumah akbar guest house',
+'guest house sumbawa',
+'penginapan dekat pantai balad',
+'villa keluarga taliwang',
+'penginapan ntb',
+],
   authors: [{ name: 'Rumah Akbar Team' }],
   creator: 'Rumah Akbar',
   publisher: 'Rumah Akbar',
@@ -37,10 +44,12 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'id_ID',
-    url: process.env.NEXT_PUBLIC_SITE_URL,
+    url: 'https://www.rumahakbar.com',
     siteName: PROPERTY_INFO.name,
-    title: `${PROPERTY_INFO.name} | ${PROPERTY_INFO.tagline}`,
-    description: PROPERTY_INFO.description,
+   title:
+'Rumah Akbar Guest House | Villa Privat Dekat Pantai Balad Taliwang',
+    description:
+'Rumah Akbar Guest House adalah villa privat dekat Pantai Balad Taliwang, Sumbawa Barat. Cocok untuk keluarga hingga 4 tamu dengan 2 kamar tidur, dapur lengkap, WiFi gratis, dan halaman luas.',
     images: [
       {
         url: '/og-image.jpg',
@@ -52,14 +61,16 @@ export const metadata: Metadata = {
     ],
   },
   twitter: {
-    card: 'summary_large_image',
-    title: PROPERTY_INFO.name,
-    description: PROPERTY_INFO.description,
-    images: ['/og-image.jpg'],
-  },
+  card: 'summary_large_image',
+  title:
+    'Rumah Akbar Guest House | Villa Privat Dekat Pantai Balad Taliwang',
+  description:
+    'Villa privat dekat Pantai Balad Taliwang, cocok untuk keluarga hingga 4 tamu.',
+  images: ['/og-image.jpg'],
+},
   manifest: '/manifest.json',
   alternates: {
-    canonical: process.env.NEXT_PUBLIC_SITE_URL,
+    canonical: 'https://www.rumahakbar.com',
   },
 }
 
@@ -87,7 +98,8 @@ export default function RootLayout({
               '@context': 'https://schema.org',
               '@type': 'LodgingBusiness',
               name: PROPERTY_INFO.name,
-              description: PROPERTY_INFO.description,
+              description:
+  'Rumah Akbar Guest House adalah villa privat dekat Pantai Balad Taliwang, Sumbawa Barat. Cocok untuk keluarga hingga 4 tamu dengan 2 kamar tidur, dapur lengkap, WiFi gratis, dan halaman luas.',
               url: process.env.NEXT_PUBLIC_SITE_URL,
               telephone: PROPERTY_INFO.whatsapp,
               image: {
@@ -111,6 +123,23 @@ export default function RootLayout({
                 { '@type': 'Feature', name: 'Dapur Lengkap' },
                 { '@type': 'Feature', name: 'AC' },
               ],
+              aggregateRating: {
+  '@type': 'AggregateRating',
+  ratingValue: '5',
+  reviewCount: '9',
+},
+
+geo: {
+  '@type': 'GeoCoordinates',
+  latitude: '-8.764123',
+  longitude: '116.794408',
+},
+
+sameAs: [
+  'https://maps.app.goo.gl/71U1utDetDFoosc76',
+  'https://www.airbnb.co.id/rooms/1638853659702945196',
+  'https://www.booking.com/hotel/id/rumah-akbar-villa-taliwang.id.html',
+],
               potentialAction: {
                 '@type': 'ReserveAction',
                 target: {
