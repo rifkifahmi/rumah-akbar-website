@@ -74,24 +74,7 @@ export default function FAQ() {
         </div>
 
         {/* Still have questions */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.3 }}
-          className="mt-12 bg-gradient-to-r from-primary to-primary/80 rounded-lg p-8 text-white text-center"
-        >
-          <h3 className="text-2xl font-bold mb-2">Masih ada pertanyaan?</h3>
-          <p className="mb-6">Hubungi kami melalui WhatsApp untuk bantuan lebih lanjut</p>
-          <a
-            href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER}?text=Saya%20punya%20pertanyaan%20tentang%20Rumah%20Akbar`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block px-8 py-3 bg-accent text-primary rounded-lg font-semibold hover:bg-accent/90 transition-colors"
-          >
-            💬 Chat Sekarang
-          </a>
-        </motion.div>
+        
       </div>
     </section>
   )
