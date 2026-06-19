@@ -9,21 +9,21 @@ export default function TrustIndicators() {
     platform: 'Google Maps',
     score: '5,0/5',
     reviews: '9 Ulasan',
-    logo: '/images/logos/googlemaps.png',
+    logo: '/images/Logos/googlemaps.png',
     url: 'https://maps.app.goo.gl/71U1utDetDFoosc76'
   },
   {
     platform: 'Airbnb',
     score: '5,0/5',
     reviews: '2 Ulasan',
-    logo: '/images/logos/airbnb.png',
+    logo: '/images/Logos/airbnb.png',
     url: 'https://www.airbnb.co.id/rooms/1638853659702945196'
   },
   {
     platform: 'Booking.com',
     score: '9,0/10',
     reviews: '3 Ulasan',
-    logo: '/images/logos/bookingdotcom.png',
+    logo: '/images/Logos/bookingdotcom.png',
     url: 'https://www.booking.com/hotel/id/rumah-akbar-villa-taliwang.id.html'
   }
 ]
