@@ -98,7 +98,7 @@ return ( <section
           Rp650.000
         </h2>
 
-       className="text-gray-300 mt-1 text-sm"
+      <p className="text-gray-300 mt-1 text-sm">
           per malam • hingga 4 tamu
         </p>
       </div>
