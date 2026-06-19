@@ -14,8 +14,9 @@ behavior: 'smooth',
 
 return ( <section
    id="home"
-   className="relative min-h-screen flex items-center justify-center overflow-hidden text-white"
- > <Image
+   className="relative min-h-[75vh] md:min-h-screen flex items-center justify-center overflow-hidden text-white"
+ >
+{/* Background */} <Image
      src="/images/gallery/02-eksterior-rumah-akbar-cover.png.png"
      alt="Rumah Akbar Guest House"
      fill
@@ -24,10 +25,13 @@ return ( <section
    />
 
 ```
+  {/* Overlay */}
   <div className="absolute inset-0 bg-black/60" />
 
+  {/* Content */}
   <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
 
+    {/* Tagline */}
     <motion.p
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
@@ -36,14 +40,17 @@ return ( <section
       Private Family Stay
     </motion.p>
 
+    {/* Title */}
     <motion.h1
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
       className="text-4xl md:text-6xl font-bold mb-4"
     >
       Rumah Akbar Guest House
     </motion.h1>
 
+    {/* Subtitle */}
     <motion.p
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
@@ -53,34 +60,67 @@ return ( <section
       Villa Privat Dekat Pantai Balad untuk Keluarga & Wisatawan
     </motion.p>
 
+    {/* Location */}
     <motion.p
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ delay: 0.3 }}
-      className="text-gray-300 mb-8"
+      className="text-gray-300 mb-6"
     >
       Pantai Balad, Taliwang, Sumbawa Barat, NTB
     </motion.p>
 
-    <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-full px-5 py-2 mb-8">
-     ⭐ Rating 5.0 dari tamu Google, Airbnb & Booking
-    </div>
+    {/* Trust Badge */}
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ delay: 0.4 }}
+      className="flex justify-center mb-6"
+    >
+      <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-full px-5 py-2">
+        ⭐ Rating 5.0 dari tamu Google, Airbnb & Booking
+      </div>
+    </motion.div>
 
-    <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl px-8 py-6 inline-block mb-8">
-      <p className="text-gray-300 text-sm">
-        Mulai dari
-      </p>
+    {/* Price Card */}
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ delay: 0.5 }}
+      className="inline-block mb-6"
+    >
+      <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl px-8 py-6">
+        <p className="text-gray-300 text-sm mb-1">
+          Mulai dari
+        </p>
 
-    <h2 className="text-3xl md:text-4xl font-bold text-accent"
-        Rp650.000
-      </h2>
+        <h2 className="text-3xl md:text-4xl font-bold text-accent">
+          Rp650.000
+        </h2>
 
-      <p className="text-gray-300 mt-2">
-        per malam • hingga 4 tamu
-      </p>
-    </div>
+        <p className="text-gray-300 mt-2">
+          per malam • hingga 4 tamu
+        </p>
+      </div>
+    </motion.div>
 
-    <div className="mb-6">
+    {/* Info Booking */}
+    <motion.p
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ delay: 0.6 }}
+      className="text-sm text-gray-300 mb-4"
+    >
+      Tersedia pemesanan langsung, Airbnb, dan Booking.com
+    </motion.p>
+
+    {/* CTA */}
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ delay: 0.7 }}
+      className="mb-4"
+    >
       <a
         href={generateWhatsAppUrl()}
         target="_blank"
@@ -89,14 +129,11 @@ return ( <section
       >
         📱 Tanya Ketersediaan
       </a>
-    </div>
-
-    <p className="text-sm text-gray-300">
-      Tersedia pemesanan langsung, Airbnb, dan Booking.com
-    </p>
+    </motion.div>
 
   </div>
 
+  {/* Scroll Down */}
   <motion.button
     animate={{ y: [0, 10, 0] }}
     transition={{
@@ -109,5 +146,7 @@ return ( <section
     <ChevronDown size={32} />
   </motion.button>
 </section>
+```
+
 )
 }
